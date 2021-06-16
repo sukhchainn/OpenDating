@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OpenDating</string>
+    <string name="title_activity_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tamara_25">Tamara, 25</string>
+</resources>

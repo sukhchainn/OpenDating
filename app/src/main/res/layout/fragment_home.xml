@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/id_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/id_label_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/outer_margin"
+                android:text="Discover"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <ImageButton
+                android:layout_width="@dimen/profile_button_size"
+                android:layout_height="@dimen/profile_button_size"
+                android:layout_margin="@dimen/outer_margin"
+                android:paddingTop="10dp"
+                android:paddingHorizontal="0dp"
+                android:paddingBottom="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_icon_user2"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_alignParentEnd="true"
+                app:tint="@color/icon_gray" />
+        </RelativeLayout>
+
+        <com.dragonize.opendating.cardstackview.CardStackView
+            android:id="@+id/id_cardStackView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/id_header"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/outer_margin"
+            android:paddingBottom="@dimen/margin40"
+            android:paddingStart="@dimen/outer_margin"
+            android:paddingEnd="@dimen/outer_margin"
+            android:background="@color/white"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+    </RelativeLayout>
+</FrameLayout>
